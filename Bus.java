@@ -10,7 +10,7 @@ public class Bus {
   public String getName() {
     return this.name;
   }
-
+//--------------------------------
   public int countPassengers() {
     int numberOfFolk = 0;
     for (Passenger banana : this.upstairs) {
@@ -21,4 +21,15 @@ public class Bus {
     return numberOfFolk;
   }
 
+//---------------------------------
+  public boolean isUpstairsFull() {
+    return countPassengers() == this.upstairs.length;
+  }
+
+  public void pickUp(Passenger passenger) {
+    if (isUpstairsFull()) return;
+    int index = countPassengers();
+    this.upstairs[index] = passenger;
+  }
+//-------------------------------
 }

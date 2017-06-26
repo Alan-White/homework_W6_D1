@@ -22,5 +22,10 @@ public void upstairsStartsEmpty() {
   assertEquals(0, bus.countPassengers());
 }
 
+@Test
+public void canPickUp() {
+  bus.pickUp(passenger);
+  assertEquals(1, bus.countPassengers());
+}
 
 }
