@@ -11,4 +11,14 @@ public class Bus {
     return this.name;
   }
 
+  public int countPassengers() {
+    int numberOfFolk = 0;
+    for (Passenger banana : this.upstairs) {
+      if (banana != null) {
+        numberOfFolk++;
+      }
+    }
+    return numberOfFolk;
+  }
+
 }

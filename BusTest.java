@@ -17,5 +17,10 @@ public void hasName() {
   assertEquals("Stagecoach", bus.getName());
 }
 
+@Test
+public void upstairsStartsEmpty() {
+  assertEquals(0, bus.countPassengers());
+}
+
 
 }
