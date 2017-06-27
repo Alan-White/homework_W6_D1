@@ -11,6 +11,7 @@ public void before() {
   bus = new Bus("Stagecoach");
   passenger = new Passenger();
 }
+//---------------------------------
 
 @Test
 public void hasName() {

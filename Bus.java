@@ -26,10 +26,10 @@ public class Bus {
     return countPassengers() == this.upstairs.length;
   }
 
-  public void pickUp(Passenger passenger) {
+  public void pickUp(Passenger orange) {
     if (isUpstairsFull()) return;
     int index = countPassengers();
-    this.upstairs[index] = passenger;
+    this.upstairs[index] = orange;
   }
 //-------------------------------
   
